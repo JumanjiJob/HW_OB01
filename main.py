@@ -4,5 +4,14 @@ class Task():
         self.time = time
         self.status = status
 
-    def add (self):
+    def task_status (self):
+        if self.status == True:
+            print('Выполнено')
+        elif self.status == False:
+            print('Не выполнено')
+
+    def task_time(self):
+        print(f'Времени на выполнение задачи осталось - {self.time}')
+
+    def task_add(self):
         
